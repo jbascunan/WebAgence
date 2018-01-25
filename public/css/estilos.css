@@ -1,0 +1,17 @@
+.divPeriodo {
+    padding-top: 1rem;
+    padding-left: 4rem;
+    padding-bottom: 1rem;
+}
+
+.logo {
+    background-image: url(../img/logo.gif);
+    height: 4rem;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+}
+
+.spanPeriodo {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

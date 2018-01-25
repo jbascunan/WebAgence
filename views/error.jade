@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  article.container
+    div.item
+      h1= message
+      h2= error.status  
+      h3 
+        a(href="/") Regresar
+      pre.err #{error.stack}

@@ -1,0 +1,9 @@
+{
+    "mysql": {
+        "host": "localhost",
+        "port": 3308,
+        "user": "admin",
+        "pass": "exodus",
+        "db": "caol"
+    }
+}
