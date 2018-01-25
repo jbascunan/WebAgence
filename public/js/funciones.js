@@ -3,7 +3,7 @@ jQuery(document).ready(function($) {
     $('.multiselect').multiselect();
 
     $('#btnRelatorio').click(function() {
-        debugger;
+
         $("#contenedorRelatorio").html('');
         var container = document.querySelector("#contenedorRelatorio");
 
@@ -30,8 +30,6 @@ jQuery(document).ready(function($) {
             }).done(function(data) {
                 let source = document.querySelector("#table-template").innerHTML;
                 let template = Handlebars.compile(source);
-
-                debugger;
 
                 let totalLiquido = 0;
                 let totalCostoFijo = 0;
@@ -81,7 +79,7 @@ jQuery(document).ready(function($) {
 
         usuarios = usuarios.substring(0, usuarios.length - 1);
 
-        debugger;
+
         $.ajax({
             url: '/getDatosPizza',
             method: 'POST',
@@ -180,8 +178,6 @@ jQuery(document).ready(function($) {
             });
         });
 
-
-        debugger;
         Highcharts.chart('contenedorRelatorio', {
             chart: {
                 type: 'column'
