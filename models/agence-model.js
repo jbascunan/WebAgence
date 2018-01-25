@@ -33,7 +33,7 @@ AgenceModel.getRelatorio = (data, cb) => {
 AgenceModel.getDatosPizza = (data, cb) => {
     let sql = `SELECT         
         u.no_usuario as name,
-        (SUM(f.valor - ((f.valor * f.total_imp_inc) / 100)) - (((f.valor - ((f.valor * f.total_imp_inc) / 100)) * f.COMISSAO_CN)/100) as y
+        (SUM(f.valor - ((f.valor * f.total_imp_inc) / 100)) - (((f.valor - ((f.valor * f.total_imp_inc) / 100)) * f.COMISSAO_CN)/100)) as y
         FROM caol.cao_fatura f
         INNER JOIN caol.cao_os c ON f.co_os = c.co_os
         LEFT JOIN caol.cao_salario s ON s.co_usuario = c.co_usuario
